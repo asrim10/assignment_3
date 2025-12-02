@@ -1,3 +1,4 @@
+import 'package:assignment_3/screens/area_of_circle_screen.dart';
 import 'package:assignment_3/screens/arithmetic_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -38,6 +39,29 @@ class DashboardScreen extends StatelessWidget {
                   "Arithmetic Screen",
                   style: TextStyle(
                     color: Colors.red,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15,
+                    fontFamily: "Times New Roman",
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => AreaOfCircleScreen(),
+                    ),
+                  );
+                },
+                child: Text(
+                  "Area of circle Screen",
+                  style: TextStyle(
+                    color: Colors.cyan,
                     fontWeight: FontWeight.bold,
                     fontSize: 15,
                     fontFamily: "Times New Roman",

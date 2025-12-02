@@ -43,7 +43,6 @@ class _ArithmeticScreen extends State<ArithmeticScreen> {
           key: _formKey,
           child: Column(
             children: [
-              // FIRST FIELD
               MyTextFormField(
                 text: "Enter first number",
                 onChanged: (value) {
@@ -52,7 +51,6 @@ class _ArithmeticScreen extends State<ArithmeticScreen> {
               ),
               const SizedBox(height: 10),
 
-              // SECOND FIELD
               MyTextFormField(
                 text: "Enter second number",
                 onChanged: (value) {
@@ -61,7 +59,6 @@ class _ArithmeticScreen extends State<ArithmeticScreen> {
               ),
               const SizedBox(height: 15),
 
-              // SUM BUTTON
               MyButton(
                 text: "SUM",
                 onPressed: () {
@@ -76,7 +73,6 @@ class _ArithmeticScreen extends State<ArithmeticScreen> {
               ),
               const SizedBox(height: 10),
 
-              // SUBTRACT BUTTON
               MyButton(
                 text: "SUBTRACT",
                 onPressed: () {
@@ -94,7 +90,6 @@ class _ArithmeticScreen extends State<ArithmeticScreen> {
               ),
               const SizedBox(height: 10),
 
-              // MULTIPLICATION BUTTON
               MyButton(
                 text: "MULTIPLY",
                 onPressed: () {
@@ -112,7 +107,6 @@ class _ArithmeticScreen extends State<ArithmeticScreen> {
               ),
               const SizedBox(height: 10),
 
-              // DIVISION BUTTON
               MyButton(
                 text: "DIVIDE",
                 onPressed: () {
