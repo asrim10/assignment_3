@@ -12,8 +12,9 @@ class PalindromeScreen extends StatefulWidget {
 }
 
 class _PalindromeScreenState extends State<PalindromeScreen> {
-  final _formKey = GlobalKey<FormState>();
   final TextEditingController numController = TextEditingController();
+
+  final _formKey = GlobalKey<FormState>();
 
   bool isPalindrome(int n) {
     int original = n;
