@@ -13,6 +13,7 @@ class MyTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      keyboardType: TextInputType.number,
       decoration: InputDecoration(
         hintText: text,
         border: const OutlineInputBorder(),
