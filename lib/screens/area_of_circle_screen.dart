@@ -12,7 +12,7 @@ class AreaOfCircleScreen extends StatefulWidget {
 }
 
 class _AreaOfCircleScreenState extends State<AreaOfCircleScreen> {
-  final TextEditingController firstController = TextEditingController();
+  final TextEditingController radiusController = TextEditingController();
 
   final _formKey = GlobalKey<FormState>();
 
@@ -35,14 +35,13 @@ class _AreaOfCircleScreenState extends State<AreaOfCircleScreen> {
       body: Padding(
         padding: const EdgeInsets.all(8),
         child: Form(
-          // ✅ FIX: Added Form
           key: _formKey,
           child: Column(
             children: [
               MyTextFormField(
                 text: "Enter Radius",
                 onChanged: (value) {
-                  firstController.text = value;
+                  radiusController.text = value;
                 },
               ),
 
@@ -51,7 +50,7 @@ class _AreaOfCircleScreenState extends State<AreaOfCircleScreen> {
               MyButton(
                 onPressed: () {
                   if (_formKey.currentState!.validate()) {
-                    double r = double.parse(firstController.text);
+                    double r = double.parse(radiusController.text);
                     double result = 3.14 * r * r;
 
                     showMySnackBar(
