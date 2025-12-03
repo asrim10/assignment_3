@@ -23,6 +23,7 @@ class MyTextFormField extends StatelessWidget {
         if (value!.isEmpty) {
           return "Please enter some text";
         }
+        return null;
       },
     );
   }
